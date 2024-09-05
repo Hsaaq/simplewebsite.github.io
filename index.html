@@ -1,35 +1,147 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Home Page </title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  </head>
-  <body>
-    <nav>
-      <div class="menu">
-        <div class="logo"><a href="">YourLogo</a></div>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Profile</a></li>
-        </ul>
-      </div>
-      <div class="img"></div>
-      <div class="center">
-        <div class="title">Create Your Own Logo</div>
-        <div class="sub_title">Using HTML & CSS Only</div>
-        <div class="buttns">
-        <button>Learn More</button>
-        <button>Learn More</button>
-      </div>
-      </div>
-      
-    </nav>
-  </body>
+<html>
+<head>
+  <title>My Personal Profile</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <style>
+    nav{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	height: 50px;
+	justify-content: center;
+	border-radius: 30px;
+	border: 2px solid #fff;
+}
+a {
+	position: relative;
+	cursor: pointer;
+	color: navy;
+	font-size: 28px;
+	padding: 0.5rem 1rem;
+}
+a::after {
+	position: absolute;
+	content: "";
+	inset: 0;
+	background: white;
+	scale: 1 0;
+	z-index: -1;
+	transition: 0.45s;
+	border-radius: 30px;
+}
+a:hover{
+	color: rgb(0, 0, 0);
+}
+a:hover::after{
+	scale: 1 0.7;
+}
+p {
+	font-size: x-large;
+	color: rgb(8, 8, 8);
+	text-align: center;
+	
+}
+h2{
+	color: rgb(255, 255, 255);
+	text-align: center;
+}
+body {
+	background-color: rgb(75, 75, 179);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+h1{
+	color: rgb(10, 9, 9);
+	text-align: center;
 
+}
+h3{
+	color: rgb(3, 3, 3);
+	
+}
+ul{
+	color: rgb(14, 12, 12);	
+	text-align: center;
+	
+}
+details{
+	border: solid;
+}
+footer {
+	text-align: center;
+}
+details{
+	border-radius: 10px;
+}
+img {
+	display: block;
+	margin: 0 auto;
+  }
+  li {
+	margin: 0 auto;
+	display: block;
+  }
+
+
+	
+
+  </style>
+</body>
+<header>
+  <nav>
+      <a href="#about">About</a>
+      <a href="#about">Experience</a>
+      <a href="#about">Contact</a>
+  </nav>
+  <h1>SPIDER-MAN</h1>
+  <img src="f380161deebe3c6731bf4111c5631495.jpg" alt="Ashprince Apostol Profile Picture">
+</header>
+<main>
+  <article id="about">
+	<details>
+    <summary><h2>About Me</h2></summary>
+    <p>I'm Ashprince Apostol, Student in NCLC and we have knowlodge on coding</p>
+</details>
+    <aside>
+		<details>
+      <summary><h2>Skills</h2></summary>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+	</details>
+    </aside>
+  </article>
+  <article id="experience">
+	<details>
+    <summary><h2>Experience</h2></summary>
+    <p>NONE</p>
+</details>
+  </article>
+  <article id="contact">
+	<details>
+    <summary><h2>Contact</h2></summary>
+    <p>Want to learn more about ICT? Contact me at:</p>
+    <ul>
+      <li><a href="https://www.facebook.com/ash.apstl">Facebook</a></li>
+     <li><a href="https://www.instagram.com/ash.apstl/">Instagram</a></li>
+	 </ul>
+	</details>
+  </article>
+</main>
+<footer>
+  <p>&copy; 2024 Ashprince Apostol</p>
+  <ul>
+    <a href="#">Terms of Use</a>
+    <a href="#">Privacy Policy</a>
+  </ul>
+</footer>
 </html>
+
